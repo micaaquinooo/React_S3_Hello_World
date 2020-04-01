@@ -4,12 +4,14 @@ import styled from "@emotion/styled";
 import Location from "./location";
 
 const WeatherCard = props => {
+  let highColor = 0;
+  let lowColor = 0;
   if (props.temp > 12) {
-    let highColor = (1 - (props.temp - 12) / 28) * 255;
-    let lowColor = highColor - 150;
+    highColor = (1 - (props.temp - 12) / 28) * 255;
+    lowColor = highColor - 150;
   } else if (props.temp <= 12) {
-    let highColor = (1 - (props.temp + 20) / 32) * 255;
-    let lowColor = highColor - 150;
+    highColor = (1 - (props.temp + 20) / 32) * 255;
+    lowColor = highColor - 150;
   }
 
   const Card = styled.div`
