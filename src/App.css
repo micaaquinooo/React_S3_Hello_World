@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+.App {
+  margin: 0 auto;
+  color: white;
+}
+
+.condition {
+  font-family: "Montserrat";
+  font-size: 1.2rem;
+}
+
+.icon {
+  width: 35%;
+}
